@@ -1,0 +1,50 @@
+.create-post{
+    background-color: #d5d5d5;
+
+    height:100vh;
+}
+.create-form-container{
+    width:min(90%,400px);
+    margin-inline: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.create-form{
+    background-color: white;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.create-form h1{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.create-form input,textarea{
+    background-color: transparent;
+    border: 1.9px solid rgb(0, 102, 255);
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    outline: none;
+}
+.create-btn{
+    padding: 0.5rem 0px;
+
+}
+.create-btn button{
+    background-color: rgb(0, 102, 255);
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.create-btn button:hover{
+    background-color: rgb(4, 66, 160);
+}
+

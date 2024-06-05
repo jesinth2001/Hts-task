@@ -1,0 +1,201 @@
+.myposts{
+    margin-top: 48px;
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: #d5d5dd;
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+}
+.myposts > *{
+    width:calc(33.3% - 10px);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.mypost-profile
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+   
+}
+.mypost-edit-del{
+    position: absolute;
+    right: 0;
+}
+
+.mypost-profile .logo{
+ width: 50px;
+ height: 50px;
+ font-size: 50px;
+ color: grey;
+}
+.mypost-profile .profile-info
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 13px;
+}
+.mypost-card img{
+    width: 100%;
+    height: 300px;
+}
+.mypost-user-func
+{
+    font-size: 25px;
+    display: flex;
+    gap: 20px;
+}
+.mypost-user-func span:first-child{
+    color: rgb(238, 25, 25);
+    
+}
+.mypost-like-comments{
+    display: flex;
+    gap: 20px;
+}
+.mypost-card h2{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.mypost-card h2,p{
+    margin: 0;
+    padding: 0;
+}
+.mypost-card{
+    position: relative;
+    overflow: hidden;
+}
+.mypost-comments{
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: 0.3s;
+}
+.open-cmt{
+    transform: translateY(0%)
+    
+}
+
+.comment-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px grey;
+}
+.comment-header h4{
+    margin: 0;
+    padding: 0;
+}
+.mypost-all-comments{
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+   
+}
+.mypost-cmt-area{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.mypost-cmt-area h5,p{
+margin: 0;
+padding: 0;
+font-style: italic;
+}
+.mypost-cmt-area p{
+    background-color: lightblue;
+    padding: 0.25rem;
+    font-size: 13px;
+    border-radius: 5px;
+    
+}
+.mypost-opt{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.623);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+ .open-opt{
+    display: block;
+}
+.mypost-opt-body{
+    background-color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  
+  
+}
+.mypost-opt-body > *{
+    padding: 1rem 0px;
+    border-bottom: 1.2px solid rgb(221, 221, 221);
+
+}
+
+.mypost-opt-body div:first-child{
+    display: flex;
+    justify-content: space-between;
+    }
+.mypost-opt-body div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: start; 
+   }
+   .mypost-opt-body div:nth-child(2) input{
+    background-color: transparent !important;
+    padding: 0;
+    box-shadow: none;
+   }
+   
+   .mypost-opt-body div:nth-child(2) button{
+       background-color: rgb(0, 119, 255);
+       color: white;
+       border: none;
+       padding: 12px 36px;  
+   }
+.mypost-opt-body div:last-child{
+border-bottom: none;
+}
+.popup-form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.open-popup{
+    display: flex;
+}
+.pop-btn-cont {
+    display: flex;
+    justify-content:end;
+    gap: 10px;
+}
+.pop-btn-cont button:last-child{
+    background-color: crimson;
+}

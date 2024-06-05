@@ -1,0 +1,19 @@
+.header{
+    background-color: rgb(0, 102, 255);
+    color: white;
+    font-size: 20px;
+    padding: 1.5rem 0px;
+    box-sizing: border-box;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+}
+.nav-btn{
+    position: absolute;
+    left: 20px;
+    top:50%;
+    transform: translateY(-50%);
+}

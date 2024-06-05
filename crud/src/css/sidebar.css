@@ -1,0 +1,75 @@
+.sidebar{
+    position: fixed;
+    background-color: white;
+    width: 25%;
+    padding: 2rem;;
+    box-sizing: border-box;
+    top:0;
+    left: 0;
+    height: 100%;
+    box-shadow: 5px 0px 5px  grey;
+    transform: translateX(-150%);
+    transition: 0.5s;
+    z-index: 11;
+}
+.opensidebar {
+    transform:translateX(0%);
+}
+.nav-close{
+    position: absolute;
+    right: 5px;
+    font-size: 30px;
+    color: blue;
+    top: 5px;
+}
+.user-profile{
+    background-color: rgb(83, 128, 252);
+    padding:1rem;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    border-radius: 4px;
+    gap: 10px;
+}
+.user-profile span:first-child{
+    
+    font-size: 35px;
+
+}
+.user-info{
+  
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.user-info span{
+    font-size: 12px !important;
+    
+}
+.nav-menu{
+    padding: 1rem 0px;
+    box-sizing: border-box;
+    
+}
+.menu-items{
+ padding: 1rem;
+ box-sizing: border-box;
+ text-transform: capitalize;
+ transition: 0.2s;
+ border-radius: 5px;
+ cursor: pointer;
+ margin-bottom: 10px;
+}
+.menu-items:hover{
+    color: white;
+    background-color: rgb(83, 128, 252);
+}
+ .active{
+    color: white;
+    background-color: rgb(83, 128, 252);
+ }
+
+ .sb-login{
+    background-color: rgb(83, 128, 252);
+    color: white;
+ }

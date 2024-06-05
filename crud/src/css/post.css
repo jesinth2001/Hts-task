@@ -1,0 +1,241 @@
+.post-body{
+    margin-top: 48px;
+}
+.post-cont{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+     
+}
+.post-card{
+    width: calc(33.3% - 20px);
+    background-color: rgb(209, 209, 209);
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+.post-card img{
+    width: 100%;
+}
+.btn-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.search-cont{
+    display: flex;
+    gap: 20px;
+}
+.search-cont input
+{
+    width: 320px;
+    outline: none;
+    border: 1.2px solid rgb(0, 110, 255);
+    box-shadow: none;
+    
+}
+.btn-cont button{
+    background-color: rgb(0, 110, 255);
+    border: none;
+    color: white;
+    padding: 12px 36px;
+   transition: 0.5s;
+}
+.btn-cont button:hover{
+    transform: scale(1.1);
+    background-color: blue;
+}
+.user-opt{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.user-opt span{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px grey;
+    transition: all 0.5s;
+}
+.user-opt span:last-child:hover{
+    background-color: crimson;
+    color: white;
+}
+.user-opt span:first-child:hover{
+    background-color: rgb(0, 119, 255);
+    color: white;
+}
+.popup-form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.popup-comment{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.open-popup{
+    display: flex;
+}
+.open-comment{
+    display: flex;
+}
+.form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: min(90%,400px);
+    padding: 1rem 1.5rem;
+    gap: 20px;
+    border-radius:10px;
+}
+.popup-comment-form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: min(90%,600px);
+    padding: 1rem 1.5rem;
+    gap: 20px;
+    border-radius:10px;
+}
+.all-comments{
+    background-color: #d5d5d5;
+    height: 200px;
+    overflow-y: auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    
+}
+.cmt{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+    margin-bottom: 10px;
+}
+.cmt h4,p{
+    padding: 0;
+    margin: 0;
+}
+.cmt h4{
+    font-size: 12px;
+    font-style: italic;
+}
+.cmt p{
+    font-size: 13px;
+    background-color: rgb(184, 209, 214);
+    padding: 0.3rem 0.5rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-style: italic;
+    
+}
+.form input,textarea{
+    background-color: rgb(218, 218, 218);
+    padding: 0.75rem;
+    outline: none;
+    border: none;
+    resize: none;
+}
+.pop-btn-cont {
+    display: flex;
+    justify-content:end;
+}
+.pop-btn-cont button{
+padding: 12px 36px;
+border: none;
+background-color: rgb(0, 68, 255);
+color: white;
+border-radius: 4px;
+}
+.upload-image{
+
+    padding: 1rem 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.upload-image button ,input{
+    padding: 0.5rem;
+    box-sizing: border-box;
+    background-color: white;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px grey;
+}
+.like-bar{
+    display: flex;
+    gap: 5px;
+}
+.load-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0px;
+    box-sizing: border-box;
+}
+.load-more button{
+    background-color: rgb(0, 110, 255);
+    border: none;
+    padding: 0.75rem 1rem;
+    color: white;
+    border-radius: 4px;
+    
+}
+.user-func{
+    display: flex;
+    gap: 20px;
+    padding: 1rem ;
+
+}
+.comment-bar{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.comment-btn {
+    display: flex;
+    gap: 20px;
+
+}
+.comment-btn button{
+    padding: 0.75rem 1rem;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+.comment-btn button:nth-child(1)
+{
+    background-color: rgb(0, 110, 255);
+   
+}
+.comment-btn button:nth-child(2)
+{
+    background-color: crimson;
+}
+.chat-bar{
+    cursor: pointer;
+}
